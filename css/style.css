@@ -1,0 +1,143 @@
+body { 
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url(../assets/Background/pattern100x100Diff.png);
+    font-family: 'Lato', sans-serif;
+}
+
+header { background: linear-gradient(#fff,#fce1f1) ;}
+
+/* Navbar edition */
+
+    .logoNavbar { 
+        width: 30vw;
+        max-width: 15rem;
+    }
+
+    .navbarLink {
+        display: block;
+        padding: .5rem 1rem;
+        color: #ec64a4;
+        font-weight: 700;
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    }
+
+    a:hover {
+        color: #943f67;
+    }
+
+/* Main edition */
+
+main { background-color: #fff; }
+
+/* Carousel configuration */
+
+.carousel-caption { 
+    background-color: #fce1f17c; 
+    border-radius: 15px;
+    color: #000;
+}
+
+    .carousel-caption h5 { 
+        font-weight: 900;
+        font-size: 3ch;
+    }
+
+    .carousel-caption p {
+        font-weight: 400;
+        font-size: 2ch;
+    }
+
+/* Our company card configuration */
+
+.pictureCard {
+    background-color: #fcf3e1;
+}
+
+/* Our courses card configuration */
+
+.videoCard { background-color: #f4e3ff;}
+
+    .videoCard h2 {
+        font-weight: 700;
+    }
+
+    .videoCard iframe {
+        flex: 0 0 auto;
+        width: 75vw;
+        height: 46.875vw;
+    }
+
+@media (min-width:991px) {
+    .videoCard iframe {
+        width: min(40vw, 500px);
+        height: min(22.5vw, 280px);
+    }
+}
+
+/* Product cards configuration */
+
+.productCard { 
+    background-color: #eefce8;
+    border: none;
+    border-radius: 1vw;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1000px; 
+}
+
+    .productCard i {
+        font-size: max(3vw, 1.5rem);
+        color: #6f9e5b;
+    }
+
+@media (min-width: 768px) {
+    .productCard { margin: 1rem; }
+    .productCard i { font-size: min(3vw, 2rem);}
+}
+
+
+/* Footer edition */
+
+footer { background-color: #fce1f1; }
+
+    /* Form buttons configuration */
+
+    .formBtn {   
+        color: #fff;
+        background-color: #f3aacc;
+        border-color: #f3aacc;
+    }
+
+    .formBtn:hover {
+        color: #fff;
+        background-color: #f35eca;
+        border-color: #f358ca;
+    }
+
+    /* Social networks icons configuration */
+
+    .socialNetworks a i {
+        font-size: 3rem;
+        color: #f3aacc;
+    }
+
+    .socialNetworks a i:hover {
+        font-size: 3rem;
+        color: #f148ab;
+    }
+
+    /* Bottom footer: Contact information configuration */
+
+    .contactInfo { background-color: #f3aacc; }
+
+        .contactInfo i { font-size: 1.5rem; }
+
+        .contactInfo p { margin: 0; }
+
+    @media (min-width: 768px) {
+
+        .contactInfo { gap: 2rem; }
+        
+    }
