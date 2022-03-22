@@ -1,0 +1,31 @@
+// Form buttons configuration 
+    
+.formBtn {   
+    color: #fff;
+    background-color: $_primary_color;
+    border-color: $_primary_color;
+    
+    &:hover {
+        color: #fff;
+        background-color: $_secondary_color;
+        border-color: $_secondary_color;
+    }
+}
+
+// Navbar and sitemap links configuration
+
+.navbarLink {
+    display: block;
+    padding: .5rem 1rem;
+    color: $_secondary_color;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+
+    &:hover {
+        color: #fff;
+        background-color: $_secondary_color;
+        border-color: $_secondary_color;
+    }
+}
+

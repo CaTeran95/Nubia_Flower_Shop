@@ -1,0 +1,127 @@
+@import './partials/variables';
+@import './partials/objects';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    max-width: 120rem;
+    margin: 0 auto;
+    background-image: url(../assets/Background/pattern100x100Diff.png);
+    font-family: 'Lato', sans-serif;
+
+    header { background: $_gradient ;
+
+        /* Navbar edition */
+        .logoNavbar { 
+            width: 30vw;
+            max-width: 15rem;
+        }
+
+    }   
+    
+    /* Main edition */
+    main { background-color: #fff; 
+
+        /* Carousel configuration */
+        .carousel-caption { 
+            background-color: #fce1f17c; 
+            border-radius: 1rem;
+            color: #000;
+            
+            h5 { 
+                font-weight: 900;
+                font-size: 3ch;
+            }
+            
+            p {
+                font-weight: 400;
+                font-size: 2ch;
+            }
+        }
+            
+        /* Our company card configuration */
+        .pictureCard {
+            background-color: #fcf3e1;
+        }
+
+        
+        /* Our courses card configuration */
+        .videoCard { background-color: #f4e3ff;
+            
+            h2 {
+                font-weight: 700;
+            }
+            
+            iframe {
+                flex: 0 0 auto;
+                width: 75vw;
+                height: 46.875vw;
+            }
+            
+            @media (min-width:61.9375rem) {
+                iframe {
+                    width: MIN(40vw, 31.25rem);
+                    height: MIN(22.5vw, 17.5rem);
+                }
+            }
+        }
+            
+        /* Product cards configuration */
+
+        .productCard { 
+            background-color: #eefce8;
+            border: none;
+            border-radius: 1vw;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 62.5rem; 
+            
+            i {
+                font-size: MAX(3vw, 1.5rem);
+                color: #6f9e5b;
+            }
+            
+            @media (min-width: 48rem) {
+                margin: 1rem; 
+                
+                i { 
+                    font-size: MIN(3vw, 2rem);
+                }           
+            }
+        }
+    }
+
+    /* Footer edition */
+    
+    footer { background-color: #fce1f1; 
+        
+        /* Social networks icons configuration */
+        
+        .socialNetworks a i {
+            font-size: 3rem;
+            color: $_primary_color;
+            
+            &:hover {
+                font-size: 3rem;
+                color: $_secondary_color;
+            }
+        }
+        
+        /* Bottom footer: Contact information configuration */
+        
+        .contactInfo { background-color: $_primary_color; 
+            
+            i { font-size: 1.5rem; }
+            
+            p { margin: 0; }
+            
+            @media (min-width: 768px) {
+                gap: 2rem;
+            }
+        }
+    }
+}
