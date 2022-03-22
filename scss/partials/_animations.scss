@@ -1,0 +1,17 @@
+.grow {
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      border-radius: 10px;
+    }
+}
+
+.emphasis {
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+}

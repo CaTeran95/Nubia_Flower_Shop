@@ -19,6 +19,17 @@
     background-color: #ec64a4;
     border-color: #ec64a4; }
 
+.grow {
+  transition: all .5s ease-in-out; }
+  .grow:hover {
+    transform: scale(1.1);
+    border-radius: 10px; }
+
+.emphasis {
+  transition: all .5s ease-in-out; }
+  .emphasis:hover {
+    transform: scale(1.2); }
+
 * {
   margin: 0;
   padding: 0;
