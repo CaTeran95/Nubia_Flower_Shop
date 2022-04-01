@@ -46,27 +46,26 @@ body {
             
         /* Our company card configuration */
         .pictureCard {
+            @extend .sectionCard;
             background-color: #fcf3e1;
         }
 
         
         /* Our courses card configuration */
-        .videoCard { background-color: #f4e3ff;
-            
-            h2 {
-                font-weight: 700;
-            }
+        .videoCard { 
+            @extend .sectionCard;            
+            background-color: #f4e3ff;
             
             iframe {
                 flex: 0 0 auto;
-                width: 75vw;
-                height: 46.875vw;
+                width: 64.5413vw;
+                height: 36.3045vw;
             }
             
-            @media (min-width:61.9375rem) {
+            @media (min-width:48rem) {
                 iframe {
-                    width: MIN(40vw, 31.25rem);
-                    height: MIN(22.5vw, 17.5rem);
+                    width: MIN(36.2286vw, 46.625rem);
+                    height: MIN(20.3785vw, 26.2265rem);
                 }
             }
         }
@@ -102,13 +101,13 @@ body {
         
         /* Social networks icons configuration */
         
-        .socialNetworks a i {
-            font-size: 3rem;
-            color: $_primary_color;
+        @each $_network, $_color in $_networks {
             
-            &:hover {
-                font-size: 3rem;
-                color: $_secondary_color;
+            .networkButton#{$_network} {
+                @extend .socialNetwork;
+                
+                &:hover { color: $_color; }
+            
             }
         }
         

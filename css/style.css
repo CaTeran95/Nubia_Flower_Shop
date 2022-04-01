@@ -1,11 +1,14 @@
 .formBtn {
   color: #fff;
   background-color: #f3aacc;
-  border-color: #f3aacc; }
-  .formBtn:hover {
-    color: #fff;
-    background-color: #ec64a4;
-    border-color: #ec64a4; }
+  border-color: #f3aacc;
+}
+
+.formBtn:hover {
+  color: #fff;
+  background-color: #ec64a4;
+  border-color: #ec64a4;
+}
 
 .navbarLink {
   display: block;
@@ -13,27 +16,62 @@
   color: #ec64a4;
   font-weight: 700;
   text-decoration: none;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out; }
-  .navbarLink:hover {
-    color: #fff;
-    background-color: #ec64a4;
-    border-color: #ec64a4; }
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.navbarLink:hover {
+  color: #fff;
+  background-color: #ec64a4;
+  border-color: #ec64a4;
+}
+
+.sectionCard, body main .pictureCard, body main .videoCard {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 3rem;
+}
+
+.sectionCard h2, body main .pictureCard h2, body main .videoCard h2 {
+  font-weight: 700;
+}
+
+.socialNetwork, body footer .networkButtonFB, body footer .networkButtonTW, body footer .networkButtonIG {
+  font-size: 3rem;
+  color: #f3aacc;
+}
 
 .grow {
-  transition: all .5s ease-in-out; }
-  .grow:hover {
-    transform: scale(1.1);
-    border-radius: 10px; }
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 10px;
+}
 
 .emphasis {
-  transition: all .5s ease-in-out; }
-  .emphasis:hover {
-    transform: scale(1.2); }
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.emphasis:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
   max-width: 120rem;
@@ -41,74 +79,123 @@ body {
   background-image: url(../assets/Background/pattern100x100Diff.png);
   font-family: 'Lato', sans-serif;
   /* Main edition */
-  /* Footer edition */ }
-  body header {
-    background: linear-gradient(#fff, #fce1f1);
-    /* Navbar edition */ }
-    body header .logoNavbar {
-      width: 30vw;
-      max-width: 15rem; }
-  body main {
-    background-color: #fff;
-    /* Carousel configuration */
-    /* Our company card configuration */
-    /* Our courses card configuration */
-    /* Product cards configuration */ }
-    body main .carousel-caption {
-      background-color: #fce1f17c;
-      border-radius: 1rem;
-      color: #000; }
-      body main .carousel-caption h5 {
-        font-weight: 900;
-        font-size: 3ch; }
-      body main .carousel-caption p {
-        font-weight: 400;
-        font-size: 2ch; }
-    body main .pictureCard {
-      background-color: #fcf3e1; }
-    body main .videoCard {
-      background-color: #f4e3ff; }
-      body main .videoCard h2 {
-        font-weight: 700; }
-      body main .videoCard iframe {
-        flex: 0 0 auto;
-        width: 75vw;
-        height: 46.875vw; }
-      @media (min-width: 61.9375rem) {
-        body main .videoCard iframe {
-          width: MIN(40vw, 31.25rem);
-          height: MIN(22.5vw, 17.5rem); } }
-    body main .productCard {
-      background-color: #eefce8;
-      border: none;
-      border-radius: 1vw;
-      margin: 0 auto;
-      padding: 0;
-      max-width: 62.5rem; }
-      body main .productCard i {
-        font-size: MAX(3vw, 1.5rem);
-        color: #6f9e5b; }
-      @media (min-width: 48rem) {
-        body main .productCard {
-          margin: 1rem; }
-          body main .productCard i {
-            font-size: MIN(3vw, 2rem); } }
-  body footer {
-    background-color: #fce1f1;
-    /* Social networks icons configuration */
-    /* Bottom footer: Contact information configuration */ }
-    body footer .socialNetworks a i {
-      font-size: 3rem;
-      color: #f3aacc; }
-      body footer .socialNetworks a i:hover {
-        font-size: 3rem;
-        color: #ec64a4; }
-    body footer .contactInfo {
-      background-color: #f3aacc; }
-      body footer .contactInfo i {
-        font-size: 1.5rem; }
-      body footer .contactInfo p {
-        margin: 0; }
-      @media (min-width: 768px) {
-        body footer .contactInfo {
-          gap: 2rem; } }
+  /* Footer edition */
+}
+
+body header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fce1f1));
+  background: linear-gradient(#fff, #fce1f1);
+  /* Navbar edition */
+}
+
+body header .logoNavbar {
+  width: 30vw;
+  max-width: 15rem;
+}
+
+body main {
+  background-color: #fff;
+  /* Carousel configuration */
+  /* Our company card configuration */
+  /* Our courses card configuration */
+  /* Product cards configuration */
+}
+
+body main .carousel-caption {
+  background-color: #fce1f17c;
+  border-radius: 1rem;
+  color: #000;
+}
+
+body main .carousel-caption h5 {
+  font-weight: 900;
+  font-size: 3ch;
+}
+
+body main .carousel-caption p {
+  font-weight: 400;
+  font-size: 2ch;
+}
+
+body main .pictureCard {
+  background-color: #fcf3e1;
+}
+
+body main .videoCard {
+  background-color: #f4e3ff;
+}
+
+body main .videoCard iframe {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 64.5413vw;
+  height: 36.3045vw;
+}
+
+@media (min-width: 48rem) {
+  body main .videoCard iframe {
+    width: MIN(36.2286vw, 46.625rem);
+    height: MIN(20.3785vw, 26.2265rem);
+  }
+}
+
+body main .productCard {
+  background-color: #eefce8;
+  border: none;
+  border-radius: 1vw;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 62.5rem;
+}
+
+body main .productCard i {
+  font-size: MAX(3vw, 1.5rem);
+  color: #6f9e5b;
+}
+
+@media (min-width: 48rem) {
+  body main .productCard {
+    margin: 1rem;
+  }
+  body main .productCard i {
+    font-size: MIN(3vw, 2rem);
+  }
+}
+
+body footer {
+  background-color: #fce1f1;
+  /* Social networks icons configuration */
+  /* Bottom footer: Contact information configuration */
+}
+
+body footer .networkButtonFB:hover {
+  color: #0165E1;
+}
+
+body footer .networkButtonTW:hover {
+  color: #1DA1F2;
+}
+
+body footer .networkButtonIG:hover {
+  color: #E1306C;
+}
+
+body footer .contactInfo {
+  background-color: #f3aacc;
+}
+
+body footer .contactInfo i {
+  font-size: 1.5rem;
+}
+
+body footer .contactInfo p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  body footer .contactInfo {
+    gap: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -29,3 +29,22 @@
     }
 }
 
+// Card for images and videos on home and courses pages.
+
+.sectionCard {
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+    
+    h2 {
+        font-weight: 700;
+    }
+
+}
+
+// Common button style for social networks
+
+.socialNetwork {
+    font-size: 3rem;
+    color: $_primary_color;
+}
