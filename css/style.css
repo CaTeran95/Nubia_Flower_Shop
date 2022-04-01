@@ -1,15 +1,3 @@
-.formBtn {
-  color: #fff;
-  background-color: #f3aacc;
-  border-color: #f3aacc;
-}
-
-.formBtn:hover {
-  color: #fff;
-  background-color: #ec64a4;
-  border-color: #ec64a4;
-}
-
 .navbarLink {
   display: block;
   padding: .5rem 1rem;
@@ -121,8 +109,32 @@ body main .pictureCard {
   background-color: #fcf3e1;
 }
 
+body main .pictureCard .yellowBtn {
+  color: #ffffff;
+  background-color: #eed582;
+  border-color: #eed582;
+}
+
+body main .pictureCard .yellowBtn:hover {
+  color: #ffffff;
+  background-color: #e6bd37;
+  border-color: #e6bd37;
+}
+
 body main .videoCard {
   background-color: #f4e3ff;
+}
+
+body main .videoCard .violetBtn {
+  color: #ffffff;
+  background-color: #d9abf7;
+  border-color: #d9abf7;
+}
+
+body main .videoCard .violetBtn:hover {
+  color: #ffffff;
+  background-color: #b26fdf;
+  border-color: #b26fdf;
 }
 
 body main .videoCard iframe {
@@ -167,6 +179,18 @@ body footer {
   background-color: #fce1f1;
   /* Social networks icons configuration */
   /* Bottom footer: Contact information configuration */
+}
+
+body footer .roseBtn {
+  color: #fff;
+  background-color: #f3aacc;
+  border-color: #f3aacc;
+}
+
+body footer .roseBtn:hover {
+  color: #fff;
+  background-color: #ec64a4;
+  border-color: #ec64a4;
 }
 
 body footer .networkButtonFB:hover {

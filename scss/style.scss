@@ -48,6 +48,10 @@ body {
         .pictureCard {
             @extend .sectionCard;
             background-color: #fcf3e1;
+
+            .yellowBtn {
+                @include formBtn(#ffffff, #eed582, #e6bd37);
+            }
         }
 
         
@@ -55,6 +59,10 @@ body {
         .videoCard { 
             @extend .sectionCard;            
             background-color: #f4e3ff;
+
+            .violetBtn {
+                @include formBtn(#ffffff, #d9abf7, #b26fdf)
+            }
             
             iframe {
                 flex: 0 0 auto;
@@ -99,6 +107,10 @@ body {
     
     footer { background-color: #fce1f1; 
         
+        .roseBtn {
+            @include formBtn(#fff, $_primary_color, $_secondary_color)
+        }
+
         /* Social networks icons configuration */
         
         @each $_network, $_color in $_networks {

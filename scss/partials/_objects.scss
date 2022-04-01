@@ -1,14 +1,14 @@
 // Form buttons configuration 
     
-.formBtn {   
-    color: #fff;
-    background-color: $_primary_color;
-    border-color: $_primary_color;
+@mixin formBtn($_color, $_pmr_color, $_scn_color) {   
+    color: $_color;
+    background-color: $_pmr_color;
+    border-color: $_pmr_color;
     
     &:hover {
-        color: #fff;
-        background-color: $_secondary_color;
-        border-color: $_secondary_color;
+        color: $_color;
+        background-color: $_scn_color;
+        border-color: $_scn_color;
     }
 }
 
